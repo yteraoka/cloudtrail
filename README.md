@@ -7,6 +7,12 @@ boto3 cloudtrail [lookup_events](https://boto3.amazonaws.com/v1/documentation/ap
 [paginator](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html)
 
 ```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+```
 $ python cloudtrail.py --help
 usage: cloudtrail [-h] [-k {EventId,EventName,ReadOnly,Username,ResourceType,ResourceName,EventSource,AccessKeyId}]
                   attributeValue startDate endDate
